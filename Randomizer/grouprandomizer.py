@@ -6,10 +6,9 @@ class RandomizerBase:
 
     def validate_items(self):    
         if not self.items:
-            raise ValueError("No names provided!")  
-        for item in self.items:
-            if ',' not in item:
-                raise ValueError("Names must be separated by commas.")
+            raise ValueError("No names provided!")
+        if not all(isinstance(item, str) and item for item in self.items):
+            raise ValueError("All items must be non-empty strings.")
 
 class GroupRandomizer(RandomizerBase): 
     def __init__(self, items):        
@@ -18,7 +17,7 @@ class GroupRandomizer(RandomizerBase):
     def create_groups(self, num_groups):   
         self.validate_items()              
         if num_groups <= 0 or num_groups > len(self.items): 
-            raise ValueError("Invalid number of groups!")   
+            raise ValueError("Invalid number of groups! or Names must be sepated by commas.")   
 
         random.shuffle(self.items)
 
