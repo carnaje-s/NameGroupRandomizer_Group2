@@ -15,6 +15,7 @@ Overview
         - Results displayed in an intuitive and visually appealing format.
 
 
+
 Installation and Usage Instructions
 
         Prerequisites
@@ -24,7 +25,6 @@ Installation and Usage Instructions
                 - random
 
         Clone or Download the Repository
-
 	        Option 1: Clone the repository
                         git clone https://github.com/carnaje-s/NameGroupRandomizer_Group2.git
                         cd NameGroupRandomizer_Group2
@@ -33,6 +33,10 @@ Installation and Usage Instructions
                         Go to your repository page.
                         Click on the Code button beside the Add file, then select Download ZIP.
 
+   	Run the Application
+    		Navigate to the project directory in the terminal.
+      		Run the main script (app.py) to start the GUI application
+
 
 
 Examples of Functionalities
@@ -40,23 +44,29 @@ Examples of Functionalities
         1. Group Randomization:
                 Input a list of names separated by commas in the provided text box. Specify the desired number of groups in the "Number of Groups"
                 input field. Click the "Generate Groups" button to randomize and display group assignments.
-
-                Example Input:
-                John, Sarah, Emily, Michael, Anna, David
-
-                Number of Groups: 3
-                Output:
-                Group 1: John, Emily
-                Group 2: Sarah, Anna
-                Group 3: Michael, David
+                	Example Input:
+               		John, Sarah, Emily, Michael, Anna, David
+                	Number of Groups: 3
+                	Output:
+                	Group 1: John, Emily
+                	Group 2: Sarah, Anna
+                	Group 3: Michael, David
 
         2. Pick Random Name:
                 Input a list of names separated by commas in the text box. Click the "Pick Random Name" button to randomly select one 
                 name from the list.
+                	Example Output:
+                	Picked Name: Emily
 
-                Example Output:
-                Picked Name: Emily
-
-        3. Clear Last Name or All Entries:
+        3. Clear Last Name and Clear All:
                 Use the "Clear Last Name" button to remove the last entered name in the text box.
+  			Example: 
+			Input: John, Sarah, Emily
+			Click "Clear Last Name".
+			Result: John, Sarah
+   
                 Use the "Clear All" button to reset all inputs and results.
+			Example:
+			Input: John, Sarah, Emily
+			Click "Clear All".
+			Result: (Text box is empty)
