@@ -7,8 +7,6 @@ class RandomizerBase:
     def validate_items(self):    
         if not self.items:
             raise ValueError("No names provided!")
-        if not all(isinstance(item, str) and item for item in self.items):
-            raise ValueError("All items must be non-empty strings.")
 
 class GroupRandomizer(RandomizerBase): 
     def __init__(self, items):        
