@@ -23,6 +23,17 @@ Installation and Usage Instructions
                 - tkinter (built-in with most Python installations)
                 - random
 
+        Clone or Download the Repository
+
+	        Option 1: Clone the repository
+                        git clone https://github.com/carnaje-s/NameGroupRandomizer_Group2.git
+                        cd NameGroupRandomizer_Group2
+
+	        Option 2: Download as ZIP
+                        Go to your repository page.
+                        Click on the Code button beside the Add file, then select Download ZIP.
+
+
 
 Examples of Functionalities
 
